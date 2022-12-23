@@ -1,0 +1,123 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3668,        115]
+NotebookOptionsPosition[      2884,         93]
+NotebookOutlinePosition[      3280,        109]
+CellTagsIndexPosition[      3237,        106]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "x_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"-", "1"}], "+", 
+   RowBox[{
+    FractionBox["2", "x"], 
+    RowBox[{"(", 
+     FractionBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{
+           FractionBox["2", "3"], 
+           SuperscriptBox["x", "2"]}]}], ")"}], 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"-", "x"}]]}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", "x"}], ")"}], 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", "2"}], "x"}]]}]}], 
+      RowBox[{"1", "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", "x", "+", 
+          RowBox[{
+           FractionBox["1", "3"], 
+           SuperscriptBox["x", "2"]}]}], ")"}], 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"-", "x"}]]}]}]], ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.84395547991741*^9, 3.843955587805934*^9}},
+ CellLabel->"In[58]:=",ExpressionUUID->"6e0a8f3c-7807-43bc-ac14-135692869f46"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NMinimize", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"f", "[", "x", "]"}], ",", 
+     RowBox[{"x", ">", "0"}]}], "}"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8439578149083014`*^9, 3.8439578263683033`*^9}, {
+  3.843957934702243*^9, 3.8439579382163544`*^9}},
+ CellLabel->"In[59]:=",ExpressionUUID->"f0ba53d6-b1b1-45c2-bfc6-2231e7cbd915"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", "1.1296619847416154`"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", "2.4928304453290733`"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.843958084295949*^9, 3.843958385722582*^9},
+ CellLabel->"Out[59]=",ExpressionUUID->"14fd0687-0084-49a8-8d7a-34813ae80d39"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "''"}], "[", "2.49283", "]"}]], "Input",
+ CellChangeTimes->{{3.8439581850909414`*^9, 3.843958224129243*^9}},
+ CellLabel->"In[60]:=",ExpressionUUID->"37916223-fbec-4461-989d-6521eddceec0"],
+
+Cell[BoxData["0.12566624347286076`"], "Output",
+ CellChangeTimes->{{3.8439581892057667`*^9, 3.8439582248704133`*^9}, 
+   3.843958385749285*^9},
+ CellLabel->"Out[60]=",ExpressionUUID->"e5f064f6-7e13-457e-a067-b5b73cc7b3d6"]
+}, Open  ]]
+},
+WindowSize->{479, 472},
+WindowMargins->{{Automatic, -5}, {Automatic, 0}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 9, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"9c587054-ebdf-459a-8315-ca9e02e88122"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1077, 34, 60, "Input",ExpressionUUID->"6e0a8f3c-7807-43bc-ac14-135692869f46"],
+Cell[CellGroupData[{
+Cell[1660, 58, 391, 9, 28, "Input",ExpressionUUID->"f0ba53d6-b1b1-45c2-bfc6-2231e7cbd915"],
+Cell[2054, 69, 326, 7, 32, "Output",ExpressionUUID->"14fd0687-0084-49a8-8d7a-34813ae80d39"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2417, 81, 226, 4, 28, "Input",ExpressionUUID->"37916223-fbec-4461-989d-6521eddceec0"],
+Cell[2646, 87, 222, 3, 32, "Output",ExpressionUUID->"e5f064f6-7e13-457e-a067-b5b73cc7b3d6"]
+}, Open  ]]
+}
+]
+*)
+
